@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 
 # Powered by serveo.net
 
