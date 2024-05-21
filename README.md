@@ -7,4 +7,6 @@ Serveo is an SSH server just for remote port forwarding, which doesn't require a
   ./Serveo.sh <local_port> [remote_port]
   #or
   ./Serveo.sh <local_port>
+  #if you wish to change the subdomain, do
+  ./Serveo.sh <local_port> [remote_port] change
 ```
