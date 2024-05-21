@@ -12,7 +12,7 @@ remote_port=$2
 
 if [ -z "$2" ]; then
     echo "No remote port provided, using only local port: $local_port"
-    remote_port=$local_port
+    remote_port=80
 fi
 
 echo "Starting Serveo tunnel from public URL to localhost:$local_port with remote port $remote_port"
