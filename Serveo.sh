@@ -16,8 +16,8 @@ remote_port=${2:-80}
 
 echo "Starting Serveo tunnel from public URL to localhost:$local_port with remote port $remote_port"
 if [ "$3" = "change" ]; then
-    # Generates a unique subdomain each time
-    ssh -R $remote_port:localhost:$local_port `echo -n $(date) | md5sum | cut -c1-8`@serveo.net
+    # Seed with the time using UNIX timestamp, so it generates a unique subdomain each time
+    ssh -R $remote_port:localhost:$local_port $(date +%Y%m%d%H%M%S)-$RANDOM@serveo.net 
 else
     # Use default serveo.net subdomain
     ssh -R $remote_port:localhost:$local_port serveo.net
