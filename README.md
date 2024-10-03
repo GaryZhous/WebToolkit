@@ -47,11 +47,10 @@ OpenSSL is a robust toolkit for SSL and TLS protocols, allowing you to check SSL
 sudo apt install openssl
 ```
 The script performs the following security checks on your web application:
-
- -Port Scanning: Using nmap, it checks for open ports and services running on the target server.
- -Vulnerability Scanning: Using nikto, it scans for known vulnerabilities on the web server.
- -Security Headers: Using curl, it checks if HTTP security headers (such as HSTS and CSP) are properly configured.
- -SSL Check: Using openssl, it checks the validity of the SSL certificate.
+- Port Scanning: Using nmap, it checks for open ports and services running on the target server.
+- Vulnerability Scanning: Using nikto, it scans for known vulnerabilities on the web server.
+- Security Headers: Using curl, it checks if HTTP security headers (such as HSTS and CSP) are properly configured.
+- SSL Check: Using openssl, it checks the validity of the SSL certificate.
 
 ```Bash
 ./webapp_security_check.sh <target_url> <target_ip>
