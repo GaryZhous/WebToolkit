@@ -55,3 +55,29 @@ The script performs the following security checks on your web application:
 ```Bash
 ./webapp_security_check.sh <target_url> <target_ip>
 ```
+
+## mysql_injection_test.sh
+
+This shell script performs SQL injection checks on a web application. It leverages the powerful `sqlmap` tool to detect SQL injection vulnerabilities in web applications that interact with MySQL databases.
+
+### Prerequisites
+
+Before running the script, ensure the following tool is installed on your system:
+
+1. **sqlmap** - Automated SQL injection detection and exploitation tool.
+
+#### Installing sqlmap
+
+`sqlmap` is a powerful tool for automating the detection and exploitation of SQL injection flaws.
+
+You can install `sqlmap` using **pip** (the Python package manager):
+
+For Python 2 or Python 3:
+```bash
+pip install sqlmap
+```
+
+#### Usage
+```bash
+./mysql_injection_test.sh <target_url> <parameter>
+```
