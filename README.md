@@ -51,6 +51,7 @@ The script performs the following security checks on your web application:
 - Security Headers: Using curl, it checks if HTTP security headers (such as HSTS and CSP) are properly configured.
 - SSL Check: Using openssl, it checks the validity of the SSL certificate.
 
+#### Usage
 ```Bash
 ./webapp_security_check.sh <target_url> <target_ip>
 ```
